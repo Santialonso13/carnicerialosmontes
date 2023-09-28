@@ -105,13 +105,12 @@ main section  img {
     
 } 
 main section p { 
-    font-size: 30px; 
+    font-size: 80px; 
     font-style: italic; 
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 100; 
-    text-align: center;  
-    
-
+    font-weight: 600px;  
+    width: 100%; 
+    text-align: center;   
 
 }  
 .especialidades{ 
@@ -163,7 +162,8 @@ main section p {
 } 
 @media screen and (max-width:1000px){ 
     .hero img { 
-        width: 100%;
+        width: 30%; 
+        object-fit: cover;
     }
 }
 
@@ -205,31 +205,32 @@ main section p {
         grid-row: span 1;
     }
 }
- 
+   
 
 
-    
+
 
 /*..............................FOOTER................*/  
 footer { 
     background-color: rgba(255, 0, 0, 0.789); 
     display: flex; 
     justify-content: space-between; 
-    align-items: center; 
-    padding: 30px;
+    align-items: center;  
+    
+    
 } 
 footer h2 {  
     font-size: 60px; 
     font-style: italic;  
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 400;  
+    font-weight: 400%;  
     color:white;
 } 
 footer p {  
-    font-size: 30px; 
+    font-size: 40px; 
     font-style: italic; 
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 100;
+    font-weight: 200px;
 } 
 
 @media screen and (max-width:510px){ 
@@ -237,9 +238,83 @@ footer p {
         flex-direction: column;
     } 
     footer h2{ 
-        font-size: 40px; 
+        font-size: 20px; 
     } 
     footer p{ 
         font-size: 20px;
     }
+}  
+
+/*---------PAGE CONOCENOS---------------------*/
+ 
+.empresa { 
+    font-style:italic; 
+    font-size: 40px;  
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: 200;
+    margin-left: 20px;   
+    justify-content: space-around;
+    align-items: center; 
+
 } 
+.imagenempresa{  
+    width: 90%; 
+    height: 80vh;  
+    margin-left: 15px; 
+    margin-top: 10px;
+    margin-right: 25px;
+    object-fit:cover;
+    box-shadow: 10px 10px 41px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 41px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 41px -14px rgba(0,0,0,0.75); 
+
+} 
+
+.ternera{ 
+    width: 90%; 
+    height: 100%;  
+    margin-left: 25px; 
+    margin-top: 10px;
+    margin-right: 25px;
+    object-fit: cover; 
+    box-shadow: 10px 10px 41px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 41px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 41px -14px rgba(0,0,0,0.75); 
+}  
+@media screen and (max-width:900px){ 
+    .imagenempresa{
+        flex-direction: column;
+        width: 80%; }
+}
+
+@media screen and (max-width:510px){  
+    footer{ 
+        flex-direction: column;
+    } 
+    footer h2{ 
+        font-size: 20px; 
+    } 
+    footer p{ 
+        font-size: 20px;
+    }
+}   
+@media screen and (max-width:560px){ 
+    .empresa{ 
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px){ 
+    .imagenempresa{ 
+        flex-direction: column;
+        width: 100%; 
+
+    }
+}
+@media screen and (max-width:900px){ 
+    header{ 
+        flex-direction: column; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: 220px; 
+    }
+}
