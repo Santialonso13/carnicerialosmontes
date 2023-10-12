@@ -15,16 +15,3 @@ black;
  40px, 
  50px; 
 
-%fuente{ 
-    font-style: italic;  
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} 
-
-%centrado{ 
-    align-items:normal;
-}
-
-.footer h2 {   
-    @extend %centrado;
-
-}

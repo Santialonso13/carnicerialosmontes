@@ -3,9 +3,6 @@ header h1, footer h2, footer h2 p, .p {
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
-.footer h2 {
-  align-items: normal; }
-
 /*..................RESET...................*/
 * {
   margin: 0;
