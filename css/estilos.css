@@ -1,0 +1,182 @@
+/*** LISTA****/
+header h1, footer h2, footer h2 p, .p {
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.footer h2 {
+  align-items: normal; }
+
+/*..................RESET...................*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/**HEADER..........**/
+header {
+  background-color: rgba(255, 0, 0, 0.789);
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 1; }
+  header h1 {
+    font-size: 50px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: white;
+    margin-block: 15px; }
+    header h1 p {
+      font-size: 50px;
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 400;
+      color: white;
+      margin-block: 15px; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      margin: 15px;
+      margin-left: 0px; }
+      header nav ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        justify-content: space-evenly;
+        align-items: end;
+        padding: 0px;
+        flex-direction: row-reverse; }
+        header nav ul li a:hover {
+          color: chartreuse; }
+
+.hero {
+  width: 100%;
+  height: calc(100vh -  164px);
+  background-image: url("../img/logo-carniceria.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main section h2 {
+  font-size: 30px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 150;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.789);
+  padding: 20px; }
+
+main section img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  margin-inline-start: 10px;
+  margin-top: 10px; }
+
+.especialidades {
+  width: 100%;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 25px; }
+
+.especialidades div img {
+  width: 90%;
+  height: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  object-fit: cover;
+  box-shadow: 10px 10px 41px -14px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 41px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 41px -14px rgba(0, 0, 0, 0.75); }
+
+main section p {
+  font-size: 80px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600px;
+  width: 100%;
+  text-align: center; }
+
+footer {
+  background-color: rgba(255, 0, 0, 0.789);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer h2 {
+    font-size: 60px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400%;
+    color: white; }
+    footer h2 p {
+      font-size: 40px;
+      font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 200px; }
+
+/**HEADER.........*/
+.especialidad4 {
+  grid-column: span 2; }
+
+.especialidad5 {
+  grid-row: span 2; }
+
+.especialidad6 {
+  grid-column: span 2; }
+
+@media screen and (max-width: 1020px) {
+  header {
+    position: static; }
+  header p {
+    font-size: 20px;
+    flex-direction: row; }
+  header nav ul {
+    flex-direction: column; }
+  header nav ul li {
+    margin: 0px; } }
+
+@media screen and (max-width: 1000px) {
+  .hero img {
+    width: 30%;
+    object-fit: cover; } }
+
+@media screen and (max-width: 910px) {
+  header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 900px) {
+  .especialidades {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px; }
+  .especialidades {
+    grid-column: span 1;
+    grid-row: span 1; }
+  .especialidad2 {
+    grid-row: span 3; }
+  .especialidad3 {
+    grid-row: span 2; }
+  .especialidad5 {
+    grid-column: span 2; } }
+
+@media screen and (max-width: 450px) {
+  .especialidades {
+    grid-template-columns: 1fr; }
+  .especialidades {
+    grid-column: span 1;
+    grid-row: span 1; } }
+
+/**FOOTER.........*/
+@media screen and (max-width: 510px) {
+  footer {
+    flex-direction: column; }
+  footer h2 {
+    font-size: 20px; }
+  footer p {
+    font-size: 20px; } }

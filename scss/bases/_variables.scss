@@ -1,0 +1,30 @@
+/*** LISTA****/ 
+$colores: 
+red, 
+blue,
+yellow,
+pink,
+tomato, 
+white, 
+black; 
+
+ $font-size: 
+ 10px, 
+ 20px, 
+ 30px, 
+ 40px, 
+ 50px; 
+
+%fuente{ 
+    font-style: italic;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+%centrado{ 
+    align-items:normal;
+}
+
+.footer h2 {   
+    @extend %centrado;
+
+}

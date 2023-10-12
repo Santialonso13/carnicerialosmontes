@@ -1,0 +1,85 @@
+/**HEADER.........*/  
+.especialidad4{ 
+    grid-column: span 2;
+}  
+.especialidad5{ 
+    grid-row: span 2; 
+    
+} 
+.especialidad6{ 
+    grid-column: span 2; 
+} 
+
+@media screen and (max-width:1020px){ 
+    header{ 
+        position: static;
+    } 
+    header p { 
+        font-size: 20px; 
+        flex-direction: row;
+    }
+    header nav ul{ 
+        flex-direction:column ; 
+        
+    } 
+    header nav ul li{ 
+        margin:0px;
+    }
+} 
+@media screen and (max-width:1000px){ 
+    .hero img { 
+        width: 30%; 
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 910px){ 
+    header{ 
+        flex-direction: column;
+    }
+}
+
+ @media screen and (max-width:900px){ 
+    .especialidades{ 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: 220px; 
+        
+    }  
+    .especialidades{ 
+        grid-column: span 1; 
+         grid-row: span 1; 
+    }  
+    .especialidad2{ 
+        grid-row: span 3;
+    }
+    .especialidad3{ 
+        grid-row: span 2;
+    } 
+    .especialidad5{ 
+        grid-column: span 2;
+    }   
+}   
+ 
+
+@media screen and (max-width:450px){ 
+    .especialidades{ 
+        grid-template-columns: 1fr;
+        
+    } 
+    .especialidades{ 
+        grid-column: span 1; 
+        grid-row: span 1;
+    }
+}
+   /**FOOTER.........*/ 
+   @media screen and (max-width:510px){ 
+    footer{ 
+        flex-direction: column;
+    } 
+    footer h2{ 
+        font-size: 20px; 
+    } 
+    footer p{ 
+        font-size: 20px;
+    }
+}  
