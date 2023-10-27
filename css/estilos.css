@@ -1,8 +1,4 @@
 /*** LISTA****/
-header h1, footer h2, footer h2 p, .p {
-  font-style: italic;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
-
 /*..................RESET...................*/
 * {
   margin: 0;
@@ -25,12 +21,12 @@ header {
     color: white;
     margin-block: 15px; }
     header h1 p {
-      font-size: 50px;
+      font-size: 30px;
       font-style: italic;
       font-family: Georgia, 'Times New Roman', Times, serif;
-      font-weight: 400;
-      color: white;
-      margin-block: 15px; }
+      font-weight: 100;
+      justify-content: left;
+      align-items: flex-end; }
   header nav ul {
     list-style: none;
     display: flex; }
@@ -47,7 +43,8 @@ header {
         padding: 0px;
         flex-direction: row-reverse; }
         header nav ul li a:hover {
-          color: chartreuse; }
+          color: chartreuse;
+          transform: scale(1.5); }
 
 .hero {
   width: 100%;
@@ -105,18 +102,20 @@ footer {
   background-color: rgba(255, 0, 0, 0.789);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 10px;
+  margin-inline-end: 0px; }
   footer h2 {
     font-size: 60px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400%;
     color: white; }
-    footer h2 p {
-      font-size: 40px;
-      font-style: italic;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-weight: 200px; }
+  footer p {
+    font-size: 40px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200px; }
 
 /**HEADER.........*/
 .especialidad4 {
@@ -177,3 +176,55 @@ footer {
     font-size: 20px; }
   footer p {
     font-size: 20px; } }
+
+/**PAGE CONOCENOS***/
+@media screen and (max-width: 900px) {
+  .imagenempresa {
+    flex-direction: column-reverse;
+    width: 80%;
+    height: 150px; } }
+
+@media screen and (max-width: 900px) {
+  .ternera {
+    flex-direction: column-reverse;
+    width: 50%;
+    height: 80px; } }
+
+@media screen and (max-width: 750px) {
+  .ternera {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    height: 50px; } }
+
+@media screen and (max-width: 900px) {
+  .empresa {
+    font-size: 20px; } }
+
+@media screen and (max-width: 750px) {
+  .empresa {
+    flex-direction: row; } }
+
+@media screen and (max-width: 900px) {
+  footer {
+    flex-direction: column; }
+  footer h2 {
+    font-size: 20px; }
+  footer p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 560px) {
+  .empresa {
+    font-size: 20px; } }
+
+@media screen and (max-width: 900px) {
+  .imagenempresa {
+    flex-direction: column;
+    width: 100%; } }
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px; } }

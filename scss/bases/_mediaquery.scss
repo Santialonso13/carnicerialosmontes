@@ -82,4 +82,73 @@
     footer p{ 
         font-size: 20px;
     }
+}   
+/**PAGE CONOCENOS***/ 
+@media screen and (max-width:900px){ 
+    .imagenempresa{
+        flex-direction:column-reverse;
+        width: 80%;  
+        height: 150px;
+    }
 }  
+@media screen and (max-width:900px) { 
+    .ternera{ 
+        flex-direction: column-reverse; 
+        width: 50%; 
+        height: 80px;
+    }
+}   
+@media screen and (max-width:750px) { 
+    .ternera{  
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-end;
+        width: 30%; 
+        height:50px ;
+ 
+   }
+}
+
+@media screen and (max-width:900px){  
+    .empresa{ 
+        font-size: 20px;
+    }
+
+} 
+@media screen and (max-width: 750px) { 
+    .empresa{ 
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:900px){  
+    footer{ 
+        flex-direction: column;
+    } 
+    footer h2{ 
+        font-size: 20px; 
+    } 
+    footer p{ 
+        font-size: 20px;
+    }
+}   
+@media screen and (max-width:560px){ 
+    .empresa{ 
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px){ 
+    .imagenempresa{ 
+        flex-direction: column;
+        width: 100%; 
+
+    }
+}
+@media screen and (max-width:900px){ 
+    header{ 
+        flex-direction: column; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: 220px; 
+    }
+} 
